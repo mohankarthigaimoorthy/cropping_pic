@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cropping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_1166" translatesAutoresizingMaskIntoConstraints="NO" id="7tc-Ca-UnI">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filipp-romanovski-Cxap3a9RDcE-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="hLE-cr-eqN">
+                                <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="T45-oD-nnS"/>
+                                    <constraint firstAttribute="height" constant="200" id="bD9-rj-TXh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7tc-Ca-UnI" secondAttribute="trailing" id="9JB-yD-B1X"/>
+                            <constraint firstItem="7tc-Ca-UnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FJK-E3-bLv"/>
+                            <constraint firstAttribute="bottom" secondItem="7tc-Ca-UnI" secondAttribute="bottom" id="FwM-l8-oWy"/>
+                            <constraint firstItem="hLE-cr-eqN" firstAttribute="centerX" secondItem="7tc-Ca-UnI" secondAttribute="centerX" id="Giy-TL-6rx"/>
+                            <constraint firstItem="hLE-cr-eqN" firstAttribute="centerY" secondItem="7tc-Ca-UnI" secondAttribute="centerY" id="Y2x-jc-WlK"/>
+                            <constraint firstItem="7tc-Ca-UnI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fjT-48-OxI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cropImage" destination="hLE-cr-eqN" id="XRE-Yo-Y0T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filipp-romanovski-Cxap3a9RDcE-unsplash" width="4000" height="5997"/>
+        <image name="group_1166" width="750" height="1624"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
